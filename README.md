@@ -12,7 +12,8 @@ In addition you can add and apply an optional coupon code.
 Installation
 ------------
 
-Copy the whole content of this module in your Magento installation directory. IMPORTANT: you have to merge the content, not override!
+Copy the whole content of this module in your Magento installation directory. 
+IMPORTANT: you have to merge the content, not override!
 
 
 Usage
