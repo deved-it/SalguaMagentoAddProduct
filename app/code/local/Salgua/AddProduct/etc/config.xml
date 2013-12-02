@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config> 
+    <modules>
+        <Salgua_AddProduct>
+            <version>1.0.0</version>
+        </Salgua_AddProduct>
+    </modules>
+    <global>
+        <models>
+            <salgua_addproduct>
+                <class>Salgua_AddProduct_Model</class>
+            </salgua_addproduct>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <checkout_cart_product_add_after>
+                <observers>
+                    <salgua_addproduct>
+                        <type>singleton</type>
+                        <class>salgua_addproduct/observer</class>
+                        <method>applyCoupon</method>
+                    </salgua_addproduct>
+                </observers>
+            </checkout_cart_product_add_after>
+        </events>
+        <routers>
+            <addproduct>
+                <use>standard</use>
+                <args>
+                    <module>Salgua_AddProduct</module>
+                    <frontName>urlcheckout</frontName>
+                </args>
+            </addproduct>
+        </routers>  
+    </frontend>
+</config>

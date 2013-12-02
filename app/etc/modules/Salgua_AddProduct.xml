@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Salgua_AddProduct>
+            <!-- Whether our module is active: true or false -->
+            <active>true</active>
+            <!-- Which code pool to use: core, community or local -->
+            <codePool>local</codePool>
+        </Salgua_AddProduct>
+    </modules>
+</config>
