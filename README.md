@@ -30,7 +30,7 @@ The only required parameter is the `product` parameter which represents a produc
 Optionally you can add a quantity with the `qty` parameter:
 > http://yourshop.com/urlcheckout/add?product=6&qty=2
 
-Optionally you can add multiple products with multiple quantities by seperating them with a `|`:
+Optionally you can add multiple products with multiple quantities by separating them with a `|`:
 > http://yourshop.com/urlcheckout/add?product=6|10&qty=1|2
 
 Optionally you can apply a coupon code with the `coupon_code` parameter:
