@@ -12,23 +12,28 @@ In addition you can add and apply an optional coupon code.
 Installation
 ------------
 
-Copy the whole content of this module in your Magento installation directory. 
-
-IMPORTANT: you have to merge the content, not override!
+1. Copy the whole content of this module in your Magento installation directory. IMPORTANT: you have to merge the content, not override!
+2. Clear cache in /var/cache/
+3. Check for module in your admin panel under System -> Configuration -> Advanced -> Disable Modules Output.  If it shows up in this list, you're all set.
 
 
 Usage
 -----
 
-You can add a product to the cart simply using this url syntax:
-http://yourshop.com/urlcheckout/add?product=6
+You can add a product to the cart at the following URL:
 
-where "6" is the product ID
+> http://yourshop.com/urlcheckout/add
 
-if you want also to add and apply a coupon code, the syntax is
+The only required parameter is the `product` parameter which represents a product id:
+> http://yourshop.com/urlcheckout/add?product=6
 
-http://yourshop.com/urlcheckout/add?product=6&coupon_code=XXXXXX
+Optionally you can add a quantity with the `qty` parameter:
+> http://yourshop.com/urlcheckout/add?product=6&qty=2
 
-where "XXXXXX" is your coupon code
+Optionally you can add multiple products with multiple quantities by seperating them with a `|`:
+> http://yourshop.com/urlcheckout/add?product=6|10&qty=1|2
+
+Optionally you can apply a coupon code with the `coupon_code` parameter:
+> http://yourshop.com/urlcheckout/add?product=6&coupon_code=codehere
 
 
