@@ -16,6 +16,8 @@ Copy the whole content of this module in your Magento installation directory.
 
 IMPORTANT: you have to merge the content, not override!
 
+Alternatively you can use modman to install this extension.
+
 
 Usage
 -----
