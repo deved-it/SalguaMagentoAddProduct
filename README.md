@@ -16,6 +16,8 @@ Installation
 2. Clear cache in /var/cache/
 3. Check for module in your admin panel under System -> Configuration -> Advanced -> Disable Modules Output.  If it shows up in this list, you're all set.
 
+Alternatively you can use modman to install this extension.
+
 
 Usage
 -----
